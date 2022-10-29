@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h1>Add your Grocery details here..</h1>
+        <br>
+
+        <form id="contactForm" autocomplete="off">
+
+            <label class="grocery" for="lists">Product_Category</label>
+            <br>
+            <select id="Product_Category" name="Product_Category">
+                <option value="Select any Category">Select..</option>
+                <option value="BabyCare">BabyCare</option>
+                <option value="Daily">Daily Use</option>
+                <option value="snacks">Snacks and Packaged Foods</option>
+                <option value="Baverages">Bavegrages</option>
+                <option value="household">Household and cleaning</option>
+                <option value="personalCare">Personal care</option>
+            </select><br>
+            <br>
+
+            <label class="grocery" for="Product_Name">Product_Name</label>
+            <br>
+            <input type="text" id="Product_Name" name="Product_Name" value="" placeholder="Write your product NAME here..">
+            <br>
+            <br>
+
+            <label class="grocrery" for="Product_desc" name="Product_desc">Product_desc</label>
+            <br>
+            <input type="text" id="Product_desc" name="Product_desc" value="" placeholder="Write your product description here..">
+            <br>
+            <br>
+
+            <label class="grocery" for="Product_Quantity" name="Product_Quantity">Product_Quantity</label>
+            <br>
+            <input type="number" id="Product_Quantity" name="Product_Quantity" value="" placeholder="Enter your product Quantity..">
+            <br>
+            <br>
+
+            <label class="grocery" for="Product_Price" name="Product_Price">Product_Price</label>
+            <br>
+            <input type="number" id="Product_Price" name="Product_Price" value="" placeholder="Enter your product price..">
+            <br>
+            <br>
+
+            <button type="submit" class="btn">Register your Product here</button>
+        
+            
+
+
+        </form>
+    </div>
+
+
+
+<script type="module" src="main.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+</body>
+</html>
